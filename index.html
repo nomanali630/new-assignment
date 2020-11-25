@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="ceter">
+        <h1>Calculator! total marks & Obtain marks with Grade</h1>
+        <input id="number1" type="number" placeholder="enter a number" required />
+        <input id="number2" type="number" placeholder="enter second number" required />
+        <button type="button" onclick="abc()">Add</button>
+        <h1 id="data"></h1>
+    
+    
+    </div>
+    <!-- <h1 id="answer"></h1> -->
+    
+    
+    
+    
+    <script>
+        //  var a= document.getElementById("answer")
+
+         function abc() {
+
+let numbers1 = document.getElementById("number1").value
+let numbers2 = document.getElementById("number2").value
+// number1 = parseInt(number1)
+// number2 = parseInt(number2)
+
+let c = (numbers2/numbers1*100);
+var b = document.getElementById('data').innerHTML=Math.floor(c)
+
+// numbers1.value=""
+
+if (b >= 80 && b <= 100) {
+    alert("A+1")}
+
+else if(b >= 70 && b <= 79) {
+    alert("A")}
+
+else if (b >= 60 && b <= 69) {
+    alert("B")}
+
+else if (b >= 50 && b <= 59) {
+    alert("C")}
+
+ else {
+    alert("fail")
+
+    }    
+
+
+}
+
+// number2.value=""
+            
+
+
+
+
+         
+
+    </script>
+</body>
+</html>
